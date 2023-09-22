@@ -5,7 +5,7 @@ import { RepeatWrapping, TextureLoader } from "three";
 export function FloatingGrid() {
 	const diffuse = useLoader(
 		TextureLoader,
-		process.env.PUBLIC_URL + "textures/grid-texture.png"
+		process.env.PUBLIC_URL + "/textures/grid-texture.png"
 	);
 
 	useEffect(() => {

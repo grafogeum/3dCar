@@ -5,10 +5,10 @@ import { Mesh } from "three";
 
 export function Car({ switchCar }) {
 	switchCar = {
-		car1: "models/bmw/scene.gltf",
-		car2: "models/car/scene.gltf",
+		car1: "/models/bmw/scene.gltf",
+		car2: "/models/car/scene.gltf",
 	};
-	const gltf = useLoader(GLTFLoader, "models/car/scene.gltf");
+	const gltf = useLoader(GLTFLoader, process.env.PUBLIC_URL + switchCar.car2);
 
 	useEffect(() => {
 		gltf.scene.scale.set(0.004, 0.004, 0.004);

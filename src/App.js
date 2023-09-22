@@ -30,17 +30,17 @@ function CarShow() {
 
 			<color args={[0, 0, 0]} attach="background" />
 
-			{/* <CubeCamera resolution={256} frames={Infinity}>
+			<CubeCamera resolution={256} frames={Infinity}>
 				{(texture) => (
 					<>
 						<EnvironmentMap map={texture} />
 						<Car />
 					</>
 				)}
-			</CubeCamera> */}
+			</CubeCamera>
 
-			{/* <Rings />
-			<Boxes /> */}
+			<Rings />
+			<Boxes />
 			<FloatingGrid />
 
 			<spotLight
@@ -101,7 +101,6 @@ function CarShow() {
 function App() {
 	return (
 		<Suspense fallback={null}>
-			TEST
 			<Canvas shadows>
 				<CarShow />
 			</Canvas>
